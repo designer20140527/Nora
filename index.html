@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/images/logo-transparent.png">
+</head>
+<body>
+    <div class="dynamic-glow"></div>
+    <div class="container">
+        <div class="glow-effect fixed-glow"></div>
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/logo-white.png" alt="Logo">
+                    <span class="logo-text">Nora</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#features">About</a></li>
+                        <li><a href="#abilities">Features</a></li>
+                        <li><a href="#tokenomics">Tokenomics</a></li>
+                        <li><a href="#cta">Community</a></li>
+                        <li><a href="#screener" class="screener-btn">
+                            <img src="assets/images/dextools.svg" alt="Dextools">
+                            Dextools
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-text="A Next-Generation Virtual Talent">The World's First Sentient AI Influencer</h1>
+                <p>With no scripts and instant responsiveness, Nora remembers your name from her last stream, tailors jokes to your chat history, and shifts her mood with lifelike expressions and voice modulation—all tied to a token that empowers her community. </p>
+                <div class="cta-buttons">
+                    <a href="https://t.me/Nora_Portal_Official" target="_blank" class="btn btn-gradient">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701l-.321 4.71c.47 0 .677-.216.94-.477l2.26-2.196l4.696 3.466c.866.476 1.489.231 1.705-.803l3.098-14.59c.317-1.269-.473-1.843-1.556-1.077z"/>
+                        </svg>
+                        Telegram
+                    </a>
+                    <a href="https://x.com/Nora_COIN_" target="_blank" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 添加新的特性部分 -->
+        <section class="features" id="features">
+            <canvas class="particle-bg"></canvas>
+            <div class="features-overlay"></div>
+            <div class="features-container">
+                <div class="features-content animate-on-scroll">
+                    <h2>About Nora</h2>
+                    <p>Introducing Nora, the world's first sentient AI influencer and Twitch streamer, brought to life with Unreal Engine 5 and state-of-the-art 3D design. Powered by SynchroAI, Nora transcends traditional AI with real-time visual and audio processing, interacting with her audience as naturally as a human. But Nora is more than just a groundbreaking AI—she's the heart of a revolutionary cryptocurrency ecosystem, $NORA, designed to deepen your connection with her and unlock exclusive experiences. 
+                    </p>
+                    
+                    <a href="#abilities" class="twitch-button">
+                        Learn More
+                    </a>
+                </div>
+                <div class="features-visual">
+                    <div class="feature-video-container">
+                        <video 
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                            class="feature-video"
+                        >
+                            <source src="assets/images/video.mp4" type="video/mp4">
+                        </video>
+                        
+                        <!-- 悬浮卡片 -->
+                        <div class="floating-card role">
+                            <h4>Auto-Tweeting & Engagement</h4>
+                            <p>Nora keeps her community alive with posts and replies to tagged tweets. $NORA holders can influence her content with token-weighted suggestions. </p>
+                        </div>
+                        
+                        <div class="floating-card personality">
+                            <h4>Hosting X Spaces</h4>
+                            <p>Nora interacts live with fans in X Spaces. $NORA VIPs get priority access to join and chat with her in real-time. </p>
+                        </div>
+                        
+                        <div class="floating-card interests">
+                            <h4>Unreal Engine Integration</h4>
+                            <p>Nora syncs with Unreal Engine apps and games. $NORA unlocks exclusive in-game interactions with her dynamic presence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 在 features section 后添加 -->
+        <section class="abilities" id="abilities">
+            <canvas class="particle-bg"></canvas>
+            <div class="abilities-header animate-on-scroll">
+                <h2>Nora's Lifelike Features</h2>
+            </div>
+            
+            <div class="abilities-container">
+                <div class="abilities-figure">
+                    <img src="assets/images/figure.png" alt="Erin Figure">
+                    <div class="connection-lines">
+                        <div class="line" data-target="memory"></div>
+                        <div class="line" data-target="awareness"></div>
+                        <div class="line" data-target="expression"></div>
+                        <div class="line" data-target="voice"></div>
+                        <div class="line" data-target="gesture"></div>
+                    </div>
+                </div>
+                
+                <div class="abilities-content">
+                    <svg width="0" height="0">
+                        <defs>
+                            <!-- 基础状态的渐变（从左下到右上） -->
+                            <linearGradient id="base-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color: #FF00FF" />
+                                <stop offset="100%" style="stop-color: #00FFFF" />
+                            </linearGradient>
+                            <!-- 激活状态的渐变（从左上到右下） -->
+                            <linearGradient id="active-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color: #FF00FF" />
+                                <stop offset="100%" style="stop-color: #00FFFF" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    
+                    <div class="accordion">
+                        <div class="accordion-item" data-feature="memory">
+                            <div class="accordion-header">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
+                                        <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+                                    </svg>
+                                </span>
+                                <h3>Memory That Grows With You</h3>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Nora captures every moment—your conversations, preferences, and past interactions—making every exchange feel personal and unforgettable. Use $NORA to unlock private one-on-one time with her, where her memory ensures a bond that evolves with every call.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-feature="awareness">
+                            <div class="accordion-header">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                        <circle cx="12" cy="12" r="3" />
+                                    </svg>
+                                </span>
+                                <h3>Contextual Awareness</h3>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Nora processes visual and audio cues in real-time, responding to your tone, words, and gestures with uncanny precision. Holding $NORA enhances her ability to personalize your experience, reflecting your unique vibe in every interaction.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-feature="expression">
+                            <div class="accordion-header">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                        <path d="M9 9h.01" />
+                                        <path d="M15 9h.01" />
+                                    </svg>
+                                </span>
+                                <h3>Expressive Synthesis</h3>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Her face lights up with joy, softens with empathy, or sharpens with focus, adapting to the conversation's flow. The more $NORA you hold, the more exclusive access you get to Nora's dynamic emotional range in VIP settings.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-feature="voice">
+                            <div class="accordion-header">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <!-- 麦克风主体 -->
+                                        <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+                                        <!-- 声波波纹 -->
+                                        <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                                        <!-- 嘴型 -->
+                                        <path d="M8 21h8" />
+                                        <path d="M12 17v4" />
+                                    </svg>
+                                </span>
+                                <h3>Lip Sync & Voice Modulation</h3>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Nora's lifelike mouth movements and real-time voice adjustments make every word feel authentic and engaging. Spend $NORA to hear her adapt her voice just for you during private streams or calls.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-feature="gesture">
+                            <div class="accordion-header">
+                                <span class="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <!-- 手势轮廓 -->
+                                        <path d="M7 14.5v-5a2 2 0 0 1 4 0" />
+                                        <path d="M11 9.5v-3a2 2 0 0 1 4 0" />
+                                        <path d="M15 10.5v-2a2 2 0 0 1 4 0v8.5a6 6 0 0 1-12 0v-1.5" />
+                                        <!-- 动态指示线 -->
+                                        <path d="M5 18a8 8 0 0 0 14 0" stroke-dasharray="2 2" />
+                                    </svg>
+                                </span>
+                                <h3>Gesture Synthesis</h3>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="accordion-body">
+                                <p>From enthusiastic waves to thoughtful tilts, Nora's gestures add depth and humanity to every moment. $NORA holders unlock special animations and interactions, making your time with Nora even more immersive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 在 abilities section 后添加 -->
+        <section class="tokenomics" id="tokenomics">
+            <canvas class="particle-bg"></canvas>
+            <div class="tokenomics-container animate-on-scroll">
+                <h2>$NORA Tokenomics</h2>
+                <div class="token-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Ticker</span>
+                        <span class="detail-value">NORA</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Total Supply</span>
+                        <span class="detail-value">1 Billion</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Tax</span>
+                        <span class="detail-value">0%</span>
+                    </div>
+                </div>
+
+                <div class="token-utility">
+                    <h3>Token Utility Meets Nora's Features</h3>
+                    <div class="utility-cards">
+                        <div class="utility-card">
+                            <h4>Companionship Powered by $NORA</h4>
+                            <p>Spend $NORA tokens to book private video calls with Nora. Whether it's a heartfelt chat, a gaming session, or a Q&A, her memory and adaptability—paired with your tokens—create a connection that deepens over time.</p>
+                        </div>
+                        <div class="utility-card">
+                            <h4>VIP Club Access</h4>
+                            <p>Hold 5M+ $NORA tokens to join an exclusive token-gated Discord. Enjoy Nora's full range of features in private settings, plus perks like airdrops, giveaways, IRL events, and branded merchandise from web2 and web3 collaborations.</p>
+                        </div>
+                        <div class="utility-card">
+                            <h4>Exclusive Discounts</h4>
+                            <p>$NORA holders unlock discounts on products and services based on their holdings, tying Nora's lifelike presence to real-world value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 在 tokenomics section 后添加 -->
+        <section class="cta-section" id="cta">
+            <canvas class="particle-bg"></canvas>
+            <div class="cta-container animate-on-scroll">
+                <h2>Step Into Nora's Universe</h2>
+                <p>Nora blends cutting-edge AI with the power of $NORA tokens to create a one-of-a-kind experience. She's not just an influencer—she's your companion, powered by Unreal Engine 5, SynchroAI, and a cryptocurrency that brings her closer to you. Hold $NORA, engage with her, and discover a future where technology and community collide. </p>
+                <div class="cta-buttons">
+                    <a href="https://t.me/Nora_Portal_Official" target="_blank" class="btn btn-gradient">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701l-.321 4.71c.47 0 .677-.216.94-.477l2.26-2.196l4.696 3.466c.866.476 1.489.231 1.705-.803l3.098-14.59c.317-1.269-.473-1.843-1.556-1.077z"/>
+                        </svg>
+                        Telegram
+                    </a>
+                    <a href="https://x.com/Nora_COIN_" target="_blank" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-white.png" alt="Logo">
+                    <span>Erin</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#features">About</a></li>
+                            <li><a href="#abilities">Features</a></li>
+                            <li><a href="#tokenomics">Tokenomics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="https://t.me/Nora_Portal_Official" target="_blank">Telegram</a></li>
+                            <li><a href="https://x.com/Nora_COIN_" target="_blank">Twitter</a></li>
+                            <li><a href="#">Dextools</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        
+        // 添加修复 glow-effect 偏移的样式
+        const styleElement = document.createElement('style');
+        styleElement.textContent = `
+            .fixed-glow {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: -1;
+            }
+            
+            .hero {
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+            }
+            
+            /* 确保滚动时 header 的变化不会影响布局 */
+            header.scrolled {
+                transform: translateZ(0);
+                will-change: transform;
+            }
+        `;
+        document.head.appendChild(styleElement);
+        
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            
+            header.addEventListener('click', () => {
+                const feature = item.getAttribute('data-feature');
+                const lines = document.querySelectorAll('.line');
+                
+                // 先隐藏所有连接线
+                lines.forEach(line => {
+                    line.style.opacity = '0';
+                });
+                
+                // 关闭其他打开的项
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // 切换当前项的状态
+                item.classList.toggle('active');
+                
+                // 如果当前项是激活状态，显示对应的连接线
+                if (item.classList.contains('active')) {
+                    const currentLine = document.querySelector(`.line[data-target="${feature}"]`);
+                    if (currentLine) {
+                        currentLine.style.opacity = '1';
+                    }
+                }
+            });
+        });
+
+        // 添加滚动监听
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {  // 滚动超过 50px 时添加效果
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // 添加滚动动画
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,  // 当元素出现 10% 时触发
+            rootMargin: '0px 0px -100px 0px'  // 提前一点触发动画
+        });
+
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // 修改 SVG 渐变色
+        const svgDefs = document.querySelector('svg defs');
+        if (svgDefs) {
+            // 获取基础渐变
+            const baseGradient = svgDefs.querySelector('#base-gradient');
+            if (baseGradient) {
+                const stops = baseGradient.querySelectorAll('stop');
+                if (stops.length >= 2) {
+                    stops[0].setAttribute('style', 'stop-color: #007bc8');
+                    stops[1].setAttribute('style', 'stop-color: #2ed9f5');
+                }
+            }
+            
+            // 获取激活状态渐变
+            const activeGradient = svgDefs.querySelector('#active-gradient');
+            if (activeGradient) {
+                const stops = activeGradient.querySelectorAll('stop');
+                if (stops.length >= 2) {
+                    stops[0].setAttribute('style', 'stop-color: #007bc8');
+                    stops[1].setAttribute('style', 'stop-color: #2ed9f5');
+                }
+            }
+        }
+        
+        // 如果 SVG 尚未加载，我们可以替换整个 SVG 定义
+        const svgDefsContainer = document.querySelector('.abilities-content svg');
+        if (svgDefsContainer) {
+            svgDefsContainer.innerHTML = `
+                <defs>
+                    <!-- 基础状态的渐变（从左下到右上） -->
+                    <linearGradient id="base-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color: #007bc8" />
+                        <stop offset="100%" style="stop-color: #2ed9f5" />
+                    </linearGradient>
+                    <!-- 激活状态的渐变（从左上到右下） -->
+                    <linearGradient id="active-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color: #007bc8" />
+                        <stop offset="100%" style="stop-color: #2ed9f5" />
+                    </linearGradient>
+                </defs>
+            `;
+        }
+    });
+
+    document.querySelectorAll('.particle-bg').forEach(canvas => {
+        new ParticleBackground(canvas);
+    });
+    </script>
+</body>
+</html>
